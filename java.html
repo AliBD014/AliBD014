@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Basics Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #F89820;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #F89820;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Java Basics Guide</h1>
+        <p>A beginner's guide to understanding Java programming concepts.</p>
+    </header>
+    <nav>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#methods">Methods</a>
+        <a href="#conditionals">Conditionals</a>
+        <a href="#loops">Loops</a>
+        <a href="#classes">Classes</a>
+    </nav>
+    <main>
+        <section id="syntax">
+            <h2>Syntax</h2>
+            <p>Java programs consist of classes, methods, and statements.</p>
+            <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </pre>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <p>Variables store data values in Java.</p>
+            <pre>
+int age = 25;     // Integer variable
+float pi = 3.14f; // Floating-point variable
+char grade = 'A'; // Character variable
+String name = "Alice"; // String variable
+
+System.out.println("Age: " + age);
+System.out.println("PI: " + pi);
+System.out.println("Grade: " + grade);
+System.out.println("Name: " + name);
+            </pre>
+        </section>
+
+        <section id="methods">
+            <h2>Methods</h2>
+            <p>Methods encapsulate reusable blocks of code in Java.</p>
+            <pre>
+public class Main {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Sum: " + add(5, 3));
+    }
+}
+            </pre>
+        </section>
+
+        <section id="conditionals">
+            <h2>Conditionals</h2>
+            <p>Conditionals execute different code based on conditions.</p>
+            <pre>
+public class Main {
+    public static void main(String[] args) {
+        int age = 18;
+
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a minor.");
+        }
+    }
+}
+            </pre>
+        </section>
+
+        <section id="loops">
+            <h2>Loops</h2>
+            <p>Loops execute a block of code multiple times.</p>
+            <pre>
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Count: " + i);
+        }
+    }
+}
+            </pre>
+        </section>
+
+        <section id="classes">
+            <h2>Classes</h2>
+            <p>Classes define objects with properties and methods.</p>
+            <pre>
+public class Car {
+    String brand;
+    int year;
+
+    public void display() {
+        System.out.println(brand + " " + year);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.brand = "Toyota";
+        car1.year = 2020;
+        car1.display();
+    }
+}
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Java Basics Guide</p>
+    </footer>
+</body>
+
+</html>

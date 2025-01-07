@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2196F3;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #2196F3;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Properties Guide</h1>
+        <p>Learn the fundamentals of CSS properties and how to style your webpage.</p>
+    </header>
+    <nav>
+        <a href="#selectors">Selectors</a>
+        <a href="#colors">Colors</a>
+        <a href="#fonts">Fonts</a>
+        <a href="#box-model">Box Model</a>
+        <a href="#flexbox">Flexbox</a>
+        <a href="#grid">Grid</a>
+    </nav>
+    <main>
+        <section id="selectors">
+            <h2>Selectors</h2>
+            <p>CSS selectors are used to target HTML elements to apply styles.</p>
+            <pre>
+/* Select all paragraphs */
+p {
+  color: blue;
+}
+
+/* Select by class */
+.example-class {
+  font-size: 16px;
+}
+
+/* Select by ID */
+#example-id {
+  text-align: center;
+}
+            </pre>
+        </section>
+
+        <section id="colors">
+            <h2>Colors</h2>
+            <p>Colors can be specified using names, HEX, RGB, or HSL values.</p>
+            <pre>
+/* Named color */
+background-color: red;
+
+/* HEX color */
+background-color: #ff0000;
+
+/* RGB color */
+background-color: rgb(255, 0, 0);
+
+/* HSL color */
+background-color: hsl(0, 100%, 50%);
+            </pre>
+        </section>
+
+        <section id="fonts">
+            <h2>Fonts</h2>
+            <p>Font styles, sizes, and families can be controlled using CSS.</p>
+            <pre>
+/* Font family */
+font-family: Arial, sans-serif;
+
+/* Font size */
+font-size: 20px;
+
+/* Font weight */
+font-weight: bold;
+            </pre>
+        </section>
+
+        <section id="box-model">
+            <h2>Box Model</h2>
+            <p>The box model consists of margins, borders, padding, and the content area.</p>
+            <pre>
+/* Box model example */
+div {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 15px;
+  width: 200px;
+}
+            </pre>
+        </section>
+
+        <section id="flexbox">
+            <h2>Flexbox</h2>
+            <p>Flexbox is used to layout items in a flexible and efficient way.</p>
+            <pre>
+/* Flex container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+            </pre>
+        </section>
+
+        <section id="grid">
+            <h2>Grid</h2>
+            <p>CSS Grid Layout is a two-dimensional layout system.</p>
+            <pre>
+/* Grid container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CSS Properties Guide</p>
+    </footer>
+</body>
+
+</html>

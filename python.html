@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4B8BBE;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4B8BBE;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Python Basics Guide</h1>
+        <p>A beginner's guide to understanding Python programming concepts.</p>
+    </header>
+    <nav>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#functions">Functions</a>
+        <a href="#conditionals">Conditionals</a>
+        <a href="#loops">Loops</a>
+        <a href="#classes">Classes</a>
+    </nav>
+    <main>
+        <section id="syntax">
+            <h2>Syntax</h2>
+            <p>Python programs consist of statements and indentation is crucial.</p>
+            <pre>
+# This is a comment
+print("Hello, World!")
+            </pre>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <p>Variables store data values in Python.</p>
+            <pre>
+# Variable declaration
+age = 25
+pi = 3.14
+name = "Alice"
+
+# Print variables
+print("Age:", age)
+print("PI:", pi)
+print("Name:", name)
+            </pre>
+        </section>
+
+        <section id="functions">
+            <h2>Functions</h2>
+            <p>Functions encapsulate reusable blocks of code in Python.</p>
+            <pre>
+def greet(name):
+    return f"Hello, {name}!"
+
+# Call the function
+print(greet("Bob"))
+            </pre>
+        </section>
+
+        <section id="conditionals">
+            <h2>Conditionals</h2>
+            <p>Conditionals execute different code based on conditions.</p>
+            <pre>
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+            </pre>
+        </section>
+
+        <section id="loops">
+            <h2>Loops</h2>
+            <p>Loops execute a block of code multiple times.</p>
+            <pre>
+# For loop
+for i in range(1, 6):
+    print("Count:", i)
+
+# While loop
+count = 1
+while count <= 5:
+    print("Count:", count)
+    count += 1
+            </pre>
+        </section>
+
+        <section id="classes">
+            <h2>Classes</h2>
+            <p>Classes define objects with properties and methods.</p>
+            <pre>
+class Car:
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    def display(self):
+        print(f"{self.brand} {self.year}")
+
+# Create an object
+car1 = Car("Toyota", 2020)
+car1.display()
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Python Basics Guide</p>
+    </footer>
+</body>
+
+</html>

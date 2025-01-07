@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #FFC107;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #FFC107;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Basics Guide</h1>
+        <p>Explore essential JavaScript concepts and examples.</p>
+    </header>
+    <nav>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#functions">Functions</a>
+        <a href="#events">Events</a>
+        <a href="#dom">DOM Manipulation</a>
+        <a href="#async">Asynchronous JavaScript</a>
+    </nav>
+    <main>
+        <section id="syntax">
+            <h2>Syntax</h2>
+            <p>JavaScript syntax defines how programs are constructed.</p>
+            <pre>
+// Single-line comment
+/* Multi-line comment */
+
+// Log output to the console
+console.log('Hello, world!');
+            </pre>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <p>Declare variables using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+            <pre>
+// Variable declaration
+let name = 'Alice';
+const age = 25;
+var isStudent = true;
+
+// Output variables
+console.log(name, age, isStudent);
+            </pre>
+        </section>
+
+        <section id="functions">
+            <h2>Functions</h2>
+            <p>Functions encapsulate reusable blocks of code.</p>
+            <pre>
+// Function declaration
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+// Function call
+console.log(greet('Bob'));
+
+// Arrow function
+const add = (a, b) => a + b;
+console.log(add(2, 3));
+            </pre>
+        </section>
+
+        <section id="events">
+            <h2>Events</h2>
+            <p>JavaScript can respond to user interactions.</p>
+            <pre>
+// Add an event listener
+const button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+  alert('Button clicked!');
+});
+            </pre>
+        </section>
+
+        <section id="dom">
+            <h2>DOM Manipulation</h2>
+            <p>Interact with and modify the Document Object Model (DOM).</p>
+            <pre>
+// Select an element
+const header = document.querySelector('h1');
+
+// Change its text
+header.textContent = 'Updated Header';
+
+// Add a class
+header.classList.add('highlight');
+            </pre>
+        </section>
+
+        <section id="async">
+            <h2>Asynchronous JavaScript</h2>
+            <p>Handle asynchronous operations using callbacks, promises, or async/await.</p>
+            <pre>
+// Fetch API example
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+// Async/await example
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchData();
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JavaScript Basics Guide</p>
+    </footer>
+</body>
+
+</html>

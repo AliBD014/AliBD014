@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Basics Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0078D7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #0078D7;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>C++ Basics Guide</h1>
+        <p>A beginner's guide to understanding C++ programming concepts.</p>
+    </header>
+    <nav>
+        <a href="#syntax">Syntax</a>
+        <a href="#variables">Variables</a>
+        <a href="#functions">Functions</a>
+        <a href="#conditionals">Conditionals</a>
+        <a href="#loops">Loops</a>
+        <a href="#classes">Classes</a>
+    </nav>
+    <main>
+        <section id="syntax">
+            <h2>Syntax</h2>
+            <p>C++ programs consist of functions, variables, and statements.</p>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <p>Variables store data values in C++.</p>
+            <pre>
+int age = 25;     // Integer variable
+float pi = 3.14;  // Floating-point variable
+char grade = 'A'; // Character variable
+string name = "Alice"; // String variable
+
+cout << "Age: " << age << endl;
+cout << "PI: " << pi << endl;
+cout << "Grade: " << grade << endl;
+cout << "Name: " << name << endl;
+            </pre>
+        </section>
+
+        <section id="functions">
+            <h2>Functions</h2>
+            <p>Functions encapsulate reusable blocks of code in C++.</p>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    cout << "Sum: " << add(5, 3) << endl;
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section id="conditionals">
+            <h2>Conditionals</h2>
+            <p>Conditionals execute different code based on conditions.</p>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int age = 18;
+
+    if (age >= 18) {
+        cout << "You are an adult." << endl;
+    } else {
+        cout << "You are a minor." << endl;
+    }
+
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section id="loops">
+            <h2>Loops</h2>
+            <p>Loops execute a block of code multiple times.</p>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        cout << "Count: " << i << endl;
+    }
+
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section id="classes">
+            <h2>Classes</h2>
+            <p>Classes define objects with properties and methods.</p>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Car {
+    public:
+        string brand;
+        int year;
+
+        void display() {
+            cout << brand << " " << year << endl;
+        }
+};
+
+int main() {
+    Car car1;
+    car1.brand = "Toyota";
+    car1.year = 2020;
+    car1.display();
+
+    return 0;
+}
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 C++ Basics Guide</p>
+    </footer>
+</body>
+
+</html>
